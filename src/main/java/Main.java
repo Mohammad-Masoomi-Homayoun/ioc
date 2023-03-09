@@ -5,6 +5,7 @@ public class Main {
 
         Player cassettePlayer = new CassettePlayer();
         Player vhsPlayer = new VHSPlayer();
+        Player cdPlayer = new CDPlayer();
 
         playerService.setPlayer(cassettePlayer);
         playerService.play(); // Play Cassette!
@@ -12,5 +13,7 @@ public class Main {
         playerService.setPlayer(vhsPlayer);
         playerService.play(); // Play VHS!
 
+        playerService.setPlayer(cdPlayer);
+        playerService.play();// Play CD!
     }
 }
